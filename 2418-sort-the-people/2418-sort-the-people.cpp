@@ -5,8 +5,10 @@ public:
         vector<pair<int,string>> v;
         for(int i=0;i<heights.size();i++){
             v.push_back({heights[i],names[i]});
+            
         }
         sort(v.begin(),v.end(),greater<>());
+        //sort(v.rbegin(),v.rend());
         vector<string> ans;
         
         for(auto it : v){
