@@ -17,7 +17,7 @@ public:
         }
         if(root->left==NULL && root->right==NULL){
             s.push_back(ds+to_string(root->val));
-            return;
+            //return;
         }
         solve(root->left,s,ds+to_string(root->val)+"->");
         solve(root->right,s,ds+to_string(root->val)+"->");
